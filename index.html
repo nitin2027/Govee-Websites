@@ -1,54 +1,95 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Govee Lights</title>
+    <title>Govee Lights - Vibrant Lighting Solutions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <!-- Header -->
+    <header class="header sticky">
         <div class="logo">Govee Lights</div>
-        <nav>
+        <nav class="navigation">
             <ul class="nav-links">
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Products</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#buy">Buy Now</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Discover Govee Lights</h1>
-        <p>Bring vibrant lighting to your space.</p>
+    <!-- Hero Section with Carousel -->
+    <section id="hero" class="hero">
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="slide active" style="background-image: url('assets/hero1.jpg');"></div>
+                <div class="slide" style="background-image: url('assets/hero2.jpg');"></div>
+                <div class="slide" style="background-image: url('assets/hero3.jpg');"></div>
+            </div>
+            <button class="carousel-button prev" id="prev-btn">&#10094;</button>
+            <button class="carousel-button next" id="next-btn">&#10095;</button>
+        </div>
     </section>
 
+    <!-- Product Gallery -->
     <section id="gallery" class="gallery">
         <h2>Product Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="assets/light1.jpg" alt="Govee Light 1">
-                <button class="buy-now">Buy Now</button>
+                <img src="https://cdn.shopify.com/s/files/1/0512/3489/8105/files/lQDPJyD9anxfGenNBrjNDwCwAJTBTI51kDwHXIbBPMGmAA_3840_1720_a7702849-a2f3-44ce-8543-8fd088088f12.jpg?v=1735902067" alt="Govee Light 1">
+                <div class="overlay">
+                    <p>Govee Smart LED Strip</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="assets/light2.jpg" alt="Govee Light 2">
-                <button class="buy-now">Buy Now</button>
+                <img src="https://cdn.shopify.com/s/files/1/0512/3489/8105/files/lQLPKIIyeEr8NIHNBrjNDwCwsIaBSk5o1hYHXI08yOebAA_3840_1720.png?v=1735901154" alt="Govee Light 2">
+                <div class="overlay">
+                    <p>Govee RGBIC Floor Lamp</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.shopify.com/s/files/1/0512/3489/8105/files/TV_390f769d-bb2e-45ca-964c-7fdc054dc48c.jpg?v=1735902175" alt="Govee Light 3">
+                <div class="overlay">
+                    <p>Govee Ambiance Lighting</p>
+                    <button class="buy-now">Buy Now</button>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
     <section id="features" class="features">
         <h2>Key Features</h2>
-        <ul>
-            <li>Vibrant Colors and Dynamic Effects</li>
-            <li>Easy Installation</li>
-            <li>Smart App Control</li>
-        </ul>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Dynamic Effects</h3>
+                <p>Customizable lighting patterns to suit any mood or occasion.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Smart Control</h3>
+                <p>Control lights via app, voice commands, or smart devices.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Energy Efficient</h3>
+                <p>Designed to deliver stunning visuals with minimal power usage.</p>
+            </div>
+        </div>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Govee Lights. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <p>&copy; 2025 Govee Lights. Follow us on:</p>
+        <div class="social-icons">
+            <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
